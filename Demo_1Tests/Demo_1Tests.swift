@@ -43,7 +43,7 @@ class Demo_1Tests: XCTestCase {
     }
     
     func testExample_6() throws {
-        let view = TextWithDescription()
+        let view = TextWithTitle()
         view.titleLabel.text = "Hello, world! Let's try a longer line here!"
         view.subtitleLabel.text = "Longer subtitle text, let's see how it fits. Indeed let's make it even longer"
         ScreenSize.allCases.forEach({ render(view: view, for: $0, andSaveTo: "\(type(of: view))_\($0.screenSize())_3.jpg") })
@@ -64,7 +64,7 @@ class Demo_1Tests: XCTestCase {
     }
     
     func testExample_9() throws {
-        let view = TextWithTitle()
+        let view = TextWithDescription()
         view.titleLabel.text = "Hello, world! Let's try a longer line here!"
         view.subtitleLabel.text = "Longer subtitle text, let's see how it fits. Indeed let's make it even longer"
         ScreenSize.allCases.forEach({ render(view: view, for: $0, andSaveTo: "\(type(of: view))_\($0.screenSize())_3.jpg") })
